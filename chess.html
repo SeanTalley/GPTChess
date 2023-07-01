@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess Board</title>
+    <style>
+		.board {
+		  display: flex;
+		  flex-wrap: wrap;
+		  width: 400px;
+		  height: 400px;
+		}
+
+		.square {
+		  width: 50px;
+		  height: 50px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.white {
+		  background-color: #f0d9b5;
+		}
+
+		.black {
+		  background-color: #b58863;
+		}
+
+		.piece {
+		  width: 80%;
+		  height: 80%;
+		  border-radius: 50%;
+		  cursor: pointer;
+		}
+
+		.piece img {
+		  width: 100%;
+		  height: 100%;
+		  background-color: transparent; /* Make the SVG image backgrounds transparent */
+		}
+    </style>
+  </head>
+  <body>
+    <div class="board"></div>
+	<button class="reset-button">Reset</button>
+	<script src="chess.js"></script>
+  </body>
+</html>
